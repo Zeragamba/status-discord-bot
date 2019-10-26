@@ -3,6 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "author": {
+    "name": "Stephen A. Wilson",
+    "email": "Stephen-356@hotmail.com"
+  },
+  "scripts": {
+    "start": "npm run bot",
+    "bot": "node --preserve-symlinks ./index.js",
+    "test": "mocha",
+    "lint": "eslint .",
+    "lint-watch": "esw . -w",
+    "validate": "npm-run-all --parallel test lint"
+  },
   "dependencies": {
     "chaos-core": "^4.0.6",
     "discord.js": "^11.5.1"
