@@ -5,6 +5,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Application data
+data/
+
 # IDEA User stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
