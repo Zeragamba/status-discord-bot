@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "chaos-core": "^4.0.6",
-    "discord.js": "^11.5.1"
+    "chaos-data-disk": "^4.0.1",
+    "discord.js": "^11.5.1",
+    "rxjs": "^6.5.3"
   }
 }
