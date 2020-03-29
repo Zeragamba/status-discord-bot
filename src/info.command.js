@@ -11,8 +11,11 @@ class InfoCommand extends ChaosCore.Command {
   run(context, response) {
     response.send({
       content:
-        "**STATUS**: Providing info about me.\n" +
-        "I am STATUS. I assist patrons of this guild. For help, speak `!help` and I will tell you what I can do.",
+        "*Status: Providing info.*\n" +
+        "I am Status, and I assist patrons on this Discord server.\n" +
+        "Speak `!help`, and I will let you know I can do for you.\n" +
+        "\n" +
+        "(Profile Pic by @BuckMoonArt: <https://twitter.com/BuckMoonArt/status/992800943719657473>)",
     });
   }
 }
