@@ -251,6 +251,11 @@ chaos-data-memory@^4.2.0:
   resolved "https://registry.yarnpkg.com/chaos-data-memory/-/chaos-data-memory-4.2.0.tgz#ebc195728599d9993e8af83ccb249b946714a0b8"
   integrity sha512-pEekBwns/edM8Pu+KXPSOPbGniLmEMBMNFEv2SgrZ/aepAK6fm8wVIsbZkljX115IW3Md3J8RrNZTzyCCxVo5Q==
 
+chaos-plugin-user-roles@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/chaos-plugin-user-roles/-/chaos-plugin-user-roles-1.1.1.tgz#763650217d9558b86548f8634bd95be48496486b"
+  integrity sha512-os5+7BOwJHfdYNy/3eOpZC/ICfcp8okiJNOHJO9gWxYSB1dFc3yWfmQIEN/4WyVyGNM97isFeZctbodWacFWjQ==
+
 chardet@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"

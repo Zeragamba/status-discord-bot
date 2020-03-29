@@ -2,10 +2,10 @@ const ChaosCore = require('chaos-core');
 const Path = require('path');
 
 const packageJson = require('../package');
-const diceRollerPlugin = require('./plugins/dice-roller');
 
 const plugins = [
-  diceRollerPlugin,
+  require('chaos-plugin-user-roles'),
+  require('./plugins/dice-roller'),
 ];
 
 const commands = [
