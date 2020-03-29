@@ -2,9 +2,10 @@ const ChaosCore = require('chaos-core');
 const Path = require('path');
 
 const packageJson = require('../package');
+const diceRollerPlugin = require('./plugins/dice-roller');
 
 const plugins = [
-
+  diceRollerPlugin,
 ];
 
 const defaultConfig = {
@@ -19,6 +20,8 @@ const defaultConfig = {
     type: 'disk',
     dataDir: Path.join(__dirname, '../data'),
   },
+
+  responseStrings: require('./strings'),
 };
 
 class StatusBot extends ChaosCore {
