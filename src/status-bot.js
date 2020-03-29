@@ -8,6 +8,10 @@ const plugins = [
   diceRollerPlugin,
 ];
 
+const commands = [
+  require('./info.command'),
+];
+
 const defaultConfig = {
   ownerUserId: null,
   loginToken: null,
@@ -21,7 +25,7 @@ const defaultConfig = {
     dataDir: Path.join(__dirname, '../data'),
   },
 
-  responseStrings: require('./strings'),
+  strings: require('./strings'),
 };
 
 class StatusBot extends ChaosCore {
@@ -30,7 +34,10 @@ class StatusBot extends ChaosCore {
       ...defaultConfig,
       ...config,
       plugins,
+      commands,
     });
+
+    this.addCommand('core', require('./info.command'));
 
     this.on('chaos.listen', () => this.discord.user.setPresence({
       game: {
