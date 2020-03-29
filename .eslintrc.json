@@ -1,0 +1,43 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "plugins": [
+    "chai-expect"
+  ],
+  "globals": {
+    "expect": "readonly",
+    "sinon": "readonly",
+    "createChaosBotStub": "readonly"
+  },
+  "env": {
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "no-console": "error",
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "always-multiline"
+      }
+    ],
+    "semi": "error",
+    "arrow-parens": "error",
+    "no-template-curly-in-string": "error",
+    "no-process-exit": "error",
+    "block-spacing": "error",
+    "arrow-spacing": "error",
+    "no-confusing-arrow": "error",
+    "chai-expect/missing-assertion": "error",
+    "chai-expect/terminating-properties": "error",
+    "chai-expect/no-inner-compare": "error",
+    "eol-last": "error"
+  }
+}
